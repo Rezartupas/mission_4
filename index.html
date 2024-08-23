@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-DoL App</title>
+    <link rel="shortcut icon" type="image/icon" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <img src="./assets/logo.png" class="logo" alt="logo">
+        <h2 class="time" id="time"></h2>
+        
+        <div class="profile">
+            <h2>Employee Profile</h2>
+            <p><strong>Name:</strong> Rahmania Almira</p>
+            <p><strong>Position:</strong> Interior Designer</p>
+        </div>
+        
+        <div class="todo-form">
+            <h2>Add Task</h2>
+            <textarea id="taskInput" placeholder="Write your task here..."></textarea>
+            <select id="priorityLevel">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select> 
+            <input type="date" id="taskDate">
+            <button id="submitTask">Submit</button>
+        </div>   
+        
+        <div class="todo-list">
+            <h2>To Do List</h2>
+            <table id="todoTable">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Priority</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="todoBody">
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="done-list">
+            <h2>Done</h2>
+            <ul id="doneList"></ul>
+        </div>
+        
+        <button id="deleteAll">Delete All</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
